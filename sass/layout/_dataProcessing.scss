@@ -1,0 +1,76 @@
+.dataProcessingSection {
+    padding-top: 34px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 40px;
+    }
+}
+
+.dataProcessTitle {
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #343B4D;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+.dataProcessingSection__text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #343B4D;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+.dataProcessingSection__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.dataProcessingSection__text__span,
+.dataProcessingSection__text__spanRecord {
+    @extend .dataProcessingSection__text;
+    color: var(--dataProcessLine-color);
+}
+
+.dataProcessingSection__textRecord {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D0060E;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+.dataProcessingSection__buttonReady {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 40px;
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+
+.dataProcessingSection__buttonReady__link {
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 18px;
+    }
+}

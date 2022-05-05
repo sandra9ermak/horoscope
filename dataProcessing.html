@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processing data</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <p class="header__firstTitle">Новый гороскоп на 2021 год!</p>
+        <p class="header__secondTitle">Узнайте, что Вас ждёт.</p>
+      </div>
+    </header>
+
+    <main>
+      
+      <section class="dataProcessingSection">
+        <div class="container">
+          
+          <div class="dataProcessLineSection">
+            <p class="dataProcessTitle">Обработка ваших данных:</p>
+            <div class="dataProcessLine">
+              <div class="dataProcessLine__span" id="myBar"></div>
+            </div>
+          </div>
+
+          <p class="dataProcessingSection__text">
+            Анализ введенных данных . . . . . . .
+            <span class="dataProcessingSection__text__span">Выполнено!</span>
+          </p>
+          <p class="dataProcessingSection__text">
+            Коррекция астрологического знака . . . . . . .
+            <span class="dataProcessingSection__text__span">Выполнено!</span>
+          </p>
+          <p class="dataProcessingSection__text">
+            Расчет вариаций ответов . . . . . . .
+            <span class="dataProcessingSection__text__span">Выполнено!</span>
+          </p>
+          <p class="dataProcessingSection__text">
+            Генерация предсказания . . . . . . .
+            <span class="dataProcessingSection__text__span">Выполнено!</span>
+          </p>
+          <p class="dataProcessingSection__text">
+            Сохранение результата . . . . . . .
+            <span class="dataProcessingSection__text__span">Выполнено!</span>
+          </p>
+          <p class="dataProcessingSection__text">
+            Поиск свободного оператора . . . . . . .
+            <span class="dataProcessingSection__text__span">Выполнено!</span>
+          </p>
+          <p class="dataProcessingSection__text">
+            Начала озвучки и записи аудио-сообщения . . . . . . .
+            <span class="dataProcessingSection__text__spanRecord"></span>
+          </p>
+          <p class="dataProcessingSection__textRecord">Идёт запись!</p>
+          <button class="dataProcessingSection__buttonReady">
+              <a href="./callAndListen.html" class="dataProcessingSection__buttonReady__link"></a>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/progressLine.js"></script>
+  </body>
+</html>

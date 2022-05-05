@@ -1,0 +1,30 @@
+.dataProcessLineSection {
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.dataProcessLine {
+    width: 289px;
+    height: 42px;
+    background: var(--first-white-color);
+
+    @media screen and (min-width: 1200px) {
+        width: 623px;
+    }
+}
+
+.dataProcessLine__span {
+    height: 30px;
+    /* width: 93px; */
+    width: 0;
+    background: var(--dataProcessLine-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 12px;
+}

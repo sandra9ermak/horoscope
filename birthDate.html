@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your birth date</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <p class="header__firstTitle">Новый гороскоп на 2021 год!</p>
+        <p class="header__secondTitle">Узнайте, что Вас ждёт.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container progressLine__container">
+        <div class="progressLine">
+          <div class="progressLine__span__birthDate"></div>
+        </div>
+      </div>
+
+    <section class="questionSection">
+      <div class="container">
+        <form class="question__form">
+          <p class="question__form__title">Введите дату своего рождения:</p>
+          <div class="birthDate__form__container">
+            <div class="birthDate__form__selectContainer">
+              <select
+                name="select"
+                id="birthNumberSelect"
+                class="birthDate__form__select"
+                onchange="changeSelect(e)"
+              >
+                <!--  OPTIONS IN JS FILE -->
+              </select>
+            </div>
+
+            <div class="birthDate__form__selectContainer">
+              <select
+                name="select"
+                id="birthMonthSelect"
+                class="birthDate__form__select"
+                onchange="changeSelect(e)"
+              >
+                <!--  OPTIONS IN JS FILE -->
+              </select>
+            </div>
+
+            <div class="birthDate__form__selectContainer">
+              <select
+                name="select"
+                id="birthYearSelect"
+                class="birthDate__form__select"
+                onchange="changeSelect(e)"
+              >
+                <!--  OPTIONS IN JS FILE -->
+              </select>
+            </div>
+          </div>
+        </form>
+        <div class="question__form__buttonContainer">
+          <button type="submit" class="question__form__button">
+            <a href="./dataProcessing.html" class="question__form__buttonLink"
+              >Далее</a
+            >
+          </button>
+          <!-- Далее</button> -->
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer__title">2020 © HOROSCOP PERSONAL</p>
+      </div>
+    </footer>
+    <script>
+      const changeSelect = (e) => {
+          console.log(e);
+      }
+    </script>
+
+    <script src="./js/birthDate.js"></script>
+  </body>
+</html>

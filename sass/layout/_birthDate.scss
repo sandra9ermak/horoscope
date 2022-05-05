@@ -1,0 +1,43 @@
+.birthDate__form__container {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    display: block;
+}
+
+.birthDate__form__selectContainer {
+    position: relative;
+}
+
+.birthDate__form__selectContainer::after {
+    content: url('./img/arrow.png');
+    position: absolute;
+    right: 37%;
+    top: 30%;
+    cursor: pointer;
+}
+
+.birthDate__form__selectContainer:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.birthDate__form__select {
+    width: 186px;
+    height: 45px;
+    border: 1px solid #E4E4E4;
+    padding-left: 17px;
+    font-size: 14px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+}
+
+.option-change {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--blue-color);
+}
