@@ -12,58 +12,60 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="header-container">
-        <p class="header__firstTitle">Новый гороскоп на 2021 год!</p>
-        <p class="header__secondTitle">Узнайте, что Вас ждёт.</p>
-      </div>
-    </header>
-
-    <main>
-      <section class="callAndListenSection">
-        <div class="container">
-          <p class="callAndListenSection__text__thanks">Спасибо за Ваши ответы!</p>
-          <p class="callAndListenSection__text__congrat">
-            Поздравляем! Прослушать свой персональный гороскоп возможно уже
-            сейчас!
-          </p>
-          <p class="callAndListenSection__text__main">2021 год Вас ошарашит!</p>
-          <p class="callAndListenSection__text__description1">
-            Вас ждёт то, чего Вы никак не ожидали. Первые известия Вы получите
-            совсем скоро, возможно это 17-18 ноября! 
-            </p>
-            <p class="callAndListenSection__text__description2">
-            Что бы прослушать
-            аудио-сообщение, необходимо нажать на кнопку ниже и позвонить со
-            своего мобильного телефона. Позвоните и Прослушайте очень серьезную
-            информацию!
-          </p>
-          <div class="callAndListen__buttonContainer">
-            <button class="callAndListen__button">
-                    <!-- <svg class="callAndListenSection__btn__svg">
-                        <use href="./img/sprite.svg#icon-phone"></use>
-                    </svg> -->
-                Звонить и слушать
-            </button>
-          </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <p class="header__firstTitle">Новый гороскоп на 2021 год!</p>
+          <p class="header__secondTitle">Узнайте, что Вас ждёт.</p>
         </div>
-      </section>
-    </main>
+      </header>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="callAndListen__footer__title">
-          TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
-          FOLOSIREA LUI DECLARATI CA AVETI 18
-        </p>
-      </div>
-    </footer>
+      <main>
+        <section class="callAndListenSection">
+          <div class="container">
+            <p class="callAndListenSection__text--thanks">
+              Спасибо за Ваши ответы!
+            </p>
+            <p class="callAndListenSection__text--congrat">
+              Поздравляем! Прослушать свой персональный гороскоп возможно уже
+              сейчас!
+            </p>
+            <p class="callAndListenSection__text--main">
+              2021 год Вас ошарашит!
+            </p>
+            <p class="callAndListenSection__text--description1">
+              Вас ждёт то, чего Вы никак не ожидали. Первые известия Вы получите
+              совсем скоро, возможно это 17-18 ноября!
+            </p>
+            <p class="callAndListenSection__text--description2">
+              Что бы прослушать аудио-сообщение, необходимо нажать на кнопку
+              ниже и позвонить со своего мобильного телефона. Позвоните и
+              Прослушайте очень серьезную информацию!
+            </p>
+            <div class="callAndListen__buttonContainer">
+              <button class="callAndListen__button">Звонить и слушать</button>
+            </div>
 
-    <script src="./js/index.js"></script>
+            <table id="table">
+              <!--  DATA IN JS FILE -->
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p class="callAndListen__footer__title">
+            TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
+            FOLOSIREA LUI DECLARATI CA AVETI 18
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/callAndListen.js"></script>
   </body>
 </html>

@@ -1,31 +1,62 @@
-const progress = () => {
-  const elem = document.getElementById("myBar");
-  const buttonReady = document.querySelector(
-    ".dataProcessingSection__buttonReady__link"
+const process = () => {
+  const progressLineConvenientTime = document.getElementById(
+    "progressLineConvenientTime"
   );
-  const textRecord = document.querySelector(
-    ".dataProcessingSection__textRecord"
-  );
-  const textDone = document.querySelector(
-    ".dataProcessingSection__text__spanRecord"
-  );
+  const progressLineInsomnia = document.getElementById("progressLineInsomnia");
+  const progressLinePlans = document.getElementById("progressLinePlans");
+  const progressLineAfter = document.getElementById("progressLineAfter");
+  const progressLineBirth = document.getElementById("progressLineBirth");
 
   let width = 1;
-  let id = setInterval(progressStatus, 50);
-  function progressStatus() {
-    if (width >= 100) {
-      clearInterval(id);
+  let idConvenientTime = setInterval(progressConvenientTime, 70);
+  function progressConvenientTime() {
+    if (width >= 20) {
+      clearInterval(idConvenientTime);
     } else {
       width++;
-      elem.style.width = width + "%";
-      elem.innerHTML = width * 1 + "%";
-      setInterval(() => {
-        buttonReady.innerHTML = "Готово!";
-        textRecord.innerHTML = "";
-        textDone.innerHTML = "Выполнено!";
-      }, 5000);
+      progressLineConvenientTime.style.width = width + "%";
+    }
+  }
+
+  let idInsomnia = setInterval(progressInsomnia, 70);
+  function progressInsomnia() {
+    if (width >= 40) {
+      clearInterval(idInsomnia);
+    } else {
+      width++;
+      progressLineInsomnia.style.width = width + "%";
+    }
+  }
+
+  let idPlans = setInterval(progressPlans, 70);
+  function progressPlans() {
+    if (width >= 60) {
+      clearInterval(idPlans);
+    } else {
+      width++;
+      progressLinePlans.style.width = width + "%";
+    }
+  }
+
+  let idAfter = setInterval(progressAfter, 70);
+  function progressAfter() {
+    if (width >= 80) {
+      clearInterval(idAfter);
+    } else {
+      width++;
+      progressLineAfter.style.width = width + "%";
+    }
+  }
+
+  let idBirth = setInterval(progressBirth, 70);
+  function progressBirth() {
+    if (width >= 100) {
+      clearInterval(idBirth);
+    } else {
+      width++;
+      progressLineBirth.style.width = width + "%";
     }
   }
 };
 
-progress();
+process();

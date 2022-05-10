@@ -1,6 +1,14 @@
 .progressLine__container{
     margin-top: 35px;
     margin-bottom: 25px;
+
+    @media screen and (min-width: 375px) {
+        margin-bottom: 102px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 25px;
+    }
 }
 
 .progressLine {
@@ -9,61 +17,38 @@
     box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.1);
     width: 289px;
 
+    @media screen and (min-width: 375px) {
+        margin: 0 auto;
+    }
+
     @media screen and (min-width: 1200px) {
         width: 623px;
     }
 }
 
-.progressLine__span__convenientTime {
-    width: 26px;
+.progressLine__span--convenientTime {
+    // width: 26px;
+    width: 0;
     height: 8px;
     background-color: var(--progressLine-color);
-
-    @media screen and (min-width: 1200px) {
-        width: 123px;
-    }
 }
 
-.progressLine__span__insomnia {
-    @extend .progressLine__span__convenientTime;
-    width: 67px;
-    // height: 8px;
-    // background-color: #B53E42;
-
-    @media screen and (min-width: 1200px) {
-        width: 246px;
-    }
+.progressLine__span--insomnia {
+    @extend .progressLine__span--convenientTime;
+    width: 20%;
 }
 
-.progressLine__span__implementationOfPlans {
-    @extend .progressLine__span__convenientTime;
-    width: 131px;
-    // height: 8px;
-    // background-color: #B53E42;
-    
-    @media screen and (min-width: 1200px) {
-        width: 369px;
-    }
+.progressLine__span--implementationOfPlans {
+    @extend .progressLine__span--convenientTime;
+    width: 40%;
 }
 
-.progressLine__span__after5years {
-    @extend .progressLine__span__convenientTime;
-    width: 194px;
-    // height: 8px;
-    // background-color: #B53E42;
-
-    @media screen and (min-width: 1200px) {
-        width: 492px;
-    }
+.progressLine__span--after5years {
+    @extend .progressLine__span--convenientTime;
+    width: 60%;
 }
 
-.progressLine__span__birthDate {
-    @extend .progressLine__span__convenientTime;
-    width: 289px;
-    // height: 8px;
-    // background-color: #B53E42;
-
-    @media screen and (min-width: 1200px) {
-        width: 623px;
-    }
+.progressLine__span--birthDate {
+    @extend .progressLine__span--convenientTime;
+    width: 80%;
 }

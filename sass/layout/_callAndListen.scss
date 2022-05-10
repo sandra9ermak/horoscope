@@ -1,76 +1,144 @@
 .callAndListenSection {
-    padding-top: 34px;
-    padding-bottom: 54px;
-}
+  padding-top: 34px;
+  padding-bottom: 54px;
 
-.callAndListenSection__text__thanks {
+  &__text--thanks {
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
     color: var(--dark-color);
     margin-bottom: 19px;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 18px;
+    @media screen and (min-width: 375px) {
+      font-size: 16px;
     }
-}
 
-.callAndListenSection__text__congrat {
-    @extend .callAndListenSection__text__thanks;
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text--congrat {
+    @extend .callAndListenSection__text--thanks;
     line-height: 21px;
     color: var(--blue-color);
-}
+  }
 
-.callAndListenSection__text__main {
-    @extend .callAndListenSection__text__thanks;
+  &__text--main {
+    @extend .callAndListenSection__text--thanks;
     font-size: 18px;
     margin-bottom: 0;
 
     @media screen and (min-width: 1200px) {
-        font-size: 22px;
+      font-size: 22px;
     }
-}
+  }
 
-.callAndListenSection__text__description1,
-.callAndListenSection__text__description2 {
+  &__text--description1,
+  &__text--description2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: var(--dark-color);
 
     @media screen and (min-width: 1200px) {
-        font-size: 18px;
+      font-size: 18px;
     }
-}
+  }
 
-.callAndListenSection__text__description1 {
+  &__text--description1 {
     margin-bottom: 25px;
+  }
 }
 
 .callAndListen__buttonContainer {
-    margin-top: 19px;
-    justify-content: center;
-    display: flex;
+  margin-top: 19px;
+  justify-content: center;
+  display: flex;
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 30px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+  }
 }
 
 .callAndListen__button {
-    width: 288px;
-    height: 45px;
-    background-color: var(--blue-color);
+  position: relative;
+  width: 288px;
+  height: 45px;
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: var(--blue-color);
     border: 1px solid var(--blue-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    background-image: url("/img/icon-phone.png");
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .callAndListenSection__btn__svg {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.table {
+  margin-top: 40px;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--dark-color);
+
+  &_line:nth-child(odd) {
+    background-color: azure;
+  }
+
+  &_line:nth-child(even) {
+    background-color: var(--second-white-color);
+  }
+
+  &_title {
+    padding: 5px 0 5px 5px;
+    width: 30%;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.6em;
+    text-align: left;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
+
+  &_value {
+    padding: 5px 5px 5px 0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: 200;
+    word-wrap: break-word;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+  }
 }

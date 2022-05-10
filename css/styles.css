@@ -20,7 +20,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-container{
+.header__container{
     width: 623px;
     margin: 0 auto;
     padding-top: 10px;
@@ -52,31 +52,31 @@
     width: 623px;
 }
 
-.progressLine__span__convenientTime{
+.progressLine__span--convenientTime{
     width: 123px;
     height: 8px;
     background-color: #B53E42;
 }
 
-.progressLine__span__insomnia{
+.progressLine__span--insomnia{
     width: 246px;
     height: 8px;
     background-color: #B53E42;
 }
 
-.progressLine__span__implementationOfPlans{
+.progressLine__span--implementationOfPlans{
     width: 369px;
     height: 8px;
     background-color: #B53E42;
 }
 
-.progressLine__span__after5years{
+.progressLine__span--after5years{
     width: 492px;
     height: 8px;
     background-color: #B53E42;
 }
 
-.progressLine__span__birthDate{
+.progressLine__span--birthDate{
     width: 623px;
     height: 8px;
     background-color: #B53E42;
@@ -170,7 +170,7 @@
     box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.35);
 }
 
-.question__form__buttonLink{
+.question__form--buttonLink{
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -190,7 +190,7 @@
     margin-right: 140px;
 }
 
-.gender__form__input{
+.gender__form--input{
     width: 28px;
     height: 28px;
     background-color: #fff;
@@ -199,11 +199,11 @@
     margin-right: 20px;
 }
 
-.gender__form__inputContainer{
+.gender__form--inputContainer{
     display: flex;
     align-items: center;
 }
-.gender__form__inputContainer:not(:last-child) {
+.gender__form--inputContainer:not(:last-child) {
     margin-right: 100px;
 }
 
