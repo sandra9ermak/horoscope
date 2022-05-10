@@ -89,68 +89,68 @@ const zodiac = (birthNumber, birthMonth) => {
     aquaImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Водолей";
   } else if (
-    (birthMonth == 2 && birthNumber >= 19) ||
-    (birthMonth == 3 && birthNumber <= 20)
+    (birthMonth == "2" && birthNumber >= "19") ||
+    (birthMonth == "3" && birthNumber <= "20")
   ) {
     piscesImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Рыбы";
   } else if (
-    (birthMonth == 3 && birthNumber >= 21) ||
-    (birthMonth == 4 && birthNumber <= 19)
+    (birthMonth == "3" && birthNumber >= "21") ||
+    (birthMonth == "4" && birthNumber <= "19")
   ) {
     ariesImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Овен";
   } else if (
-    (birthMonth == 4 && birthNumber >= 20) ||
-    (birthMonth == 5 && birthNumber <= 20)
+    (birthMonth == "4" && birthNumber >= "20") ||
+    (birthMonth == "5" && birthNumber <= "20")
   ) {
     taurusImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Телец";
   } else if (
-    (birthMonth == 5 && birthNumber >= 21) ||
-    (birthMonth == 6 && birthNumber <= 21)
+    (birthMonth == "5" && birthNumber >= "21") ||
+    (birthMonth == "6" && birthNumber <= "21")
   ) {
     geminiImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Близнецы";
   } else if (
-    (birthMonth == 6 && birthNumber >= 22) ||
-    (birthMonth == 7 && birthNumber <= 22)
+    (birthMonth == "6" && birthNumber >= "22") ||
+    (birthMonth == "7" && birthNumber <= "22")
   ) {
     cancerImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Рак";
   } else if (
-    (birthMonth == 7 && birthNumber >= 23) ||
-    (birthMonth == 8 && birthNumber <= 22)
+    (birthMonth == "7" && birthNumber >= "23") ||
+    (birthMonth == "8" && birthNumber <= "22")
   ) {
     leoImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Лев";
   } else if (
-    (birthMonth == 8 && birthNumber >= 23) ||
-    (birthMonth == 9 && birthNumber <= 22)
+    (birthMonth == "8" && birthNumber >= "23") ||
+    (birthMonth == "9" && birthNumber <= "22")
   ) {
     virgoImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Дева";
   } else if (
-    (birthMonth == 9 && birthNumber >= 23) ||
-    (birthMonth == 10 && birthNumber <= 22)
+    (birthMonth == "9" && birthNumber >= "23") ||
+    (birthMonth == "10" && birthNumber <= "22")
   ) {
     libraImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Весы";
   } else if (
-    (birthMonth == 10 && birthNumber >= 23) ||
-    (birthMonth == 11 && birthNumber <= 21)
+    (birthMonth == "10" && birthNumber >= "23") ||
+    (birthMonth == "11" && birthNumber <= "21")
   ) {
     scorpioImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Скорпион";
   } else if (
-    (birthMonth == 11 && birthNumber >= 22) ||
-    (birthMonth == 12 && birthNumber <= 21)
+    (birthMonth == "11" && birthNumber >= "22") ||
+    (birthMonth == "12" && birthNumber <= "21")
   ) {
     libraImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Стрелец";
   } else if (
-    (birthMonth == 12 && birthNumber >= 22) ||
-    (birthMonth == 1 && birthNumber <= 19)
+    (birthMonth == "12" && birthNumber >= "22") ||
+    (birthMonth == "1" && birthNumber <= "19")
   ) {
     capricornImage.classList.add("zodiacSignImage-visible");
     zodiacSignName.innerHTML = "Козерог";

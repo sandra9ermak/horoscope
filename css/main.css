@@ -523,7 +523,7 @@
 }
 
 .birthDate__form--selectContainer::after {
-  content: url("./img/arrow.png");
+  content: url("../../img/arrow.png");
   position: absolute;
   right: 37%;
   top: 30%;
